@@ -8,5 +8,16 @@
       "id": 1
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "firstName": "hahaha",
+      "lastName": "deneme",
+      "phoneNumber": "+905457979428",
+      "email": "hsyncn17@gmail.com",
+      "age": "",
+      "website": "",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
