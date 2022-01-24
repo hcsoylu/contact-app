@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import userContactSlice from "../features/userContactSlice";
 import userSlice from "../features/userSlice";
 import {
   persistStore,
@@ -12,7 +13,6 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import userContactSlice from "../features/userContactSlice";
 
 const persistConfig = {
   key: "root",
