@@ -1,4 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "firstName": "morutan",
+      "lastName": "morutan",
+      "email": "morutan@gmail.com",
+      "password": "6140cdf83286108845641f147796b0c48f36961a",
+      "id": 1
+    }
+  ],
   "contacts": []
 }
