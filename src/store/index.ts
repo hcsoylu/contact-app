@@ -12,6 +12,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import userContactSlice from "../features/userContactSlice";
 
 const persistConfig = {
   key: "root",
@@ -24,6 +25,7 @@ const persistedReducer = persistReducer(persistConfig, userSlice);
 const store = configureStore({
   reducer: {
     user: persistedReducer,
+    contacts: userContactSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
