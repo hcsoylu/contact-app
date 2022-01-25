@@ -4,20 +4,9 @@
       "firstName": "morutan",
       "lastName": "morutan",
       "email": "morutan@gmail.com",
-      "password": "6140cdf83286108845641f147796b0c48f36961a",
+      "password": "6ea73c632d519acd96ef0da5a03a6969bdc9f825",
       "id": 1
     }
   ],
-  "contacts": [
-    {
-      "firstName": "Aslan",
-      "lastName": "Muslera",
-      "phoneNumber": "+905447974438",
-      "email": "muslera@gmail.com",
-      "age": "35",
-      "website": "www.muslera.com",
-      "userId": 1,
-      "id": 1
-    }
-  ]
+  "contacts": []
 }
