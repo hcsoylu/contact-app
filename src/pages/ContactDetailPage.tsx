@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import appAxios from "../helpers/axios";
 import { Contact } from "../model/model";
 import styled from "styled-components";
 import Loading from "../components/Loading";
 
 const ContactDetailPage = () => {
+  let navigate = useNavigate();
+
   const [loading, setLoading] = useState(true);
 
   const { contactId } = useParams();
@@ -13,11 +15,19 @@ const ContactDetailPage = () => {
   const [contact, setContact] = useState({} as Contact);
 
   useEffect(() => {
-    appAxios.get(`/contacts/${contactId}`).then((res) => {
-      setContact(res.data);
-      setLoading(false);
-    });
-  }, [contactId]);
+    appAxios
+      .get(`/contacts/${contactId}`)
+      .then((res) => {
+        console.log(res);
+        setContact(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+        navigate("/");
+      });
+  }, [contactId, navigate]);
 
   if (loading) {
     return <Loading />;

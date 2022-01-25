@@ -38,11 +38,10 @@ const Home = () => {
       ) : (
         <>
           <h3>You have #{contacts.length} contact </h3>
-          <div className="container">
-            {contacts.map((contact) => (
-              <ContactItem contact={contact} key={contact.id} />
-            ))}
-          </div>
+
+          {contacts.map((contact) => (
+            <ContactItem contact={contact} key={contact.id} />
+          ))}
         </>
       )}
     </HomeBox>
@@ -64,7 +63,6 @@ const HomeBox = styled.div`
     }
 
     a {
-      text-decoration: none;
       color: blue;
     }
   }
@@ -73,8 +71,5 @@ const HomeBox = styled.div`
     margin: 30px 0;
     font-size: 16px;
     font-weight: 500;
-  }
-
-  .container {
   }
 `;

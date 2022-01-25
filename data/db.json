@@ -8,5 +8,16 @@
       "id": 1
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "firstName": "Aslan",
+      "lastName": "Muslera",
+      "phoneNumber": "+905447974438",
+      "email": "muslera@gmail.com",
+      "age": "35",
+      "website": "www.muslera.com",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }

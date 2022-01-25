@@ -17,7 +17,6 @@ const Header = () => {
           <button
             onClick={() => {
               dispatch(setUser(null));
-              localStorage.removeItem("user");
             }}
           >
             Log out
