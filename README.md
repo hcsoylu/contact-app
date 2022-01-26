@@ -20,7 +20,7 @@ This is an application where you can Create, View, Update and Delete your contac
     
 ## Environment Variables
 
-To run this project, you will need to add the following environment variable to your .env file
+You will need to add the following environment variable to your .env file
 
 `REACT_APP_SECRET_KEY`
 
